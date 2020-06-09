@@ -80,7 +80,7 @@
             
             <main calss="py-4">
                 {{-- コンテンツをここに入れるため@yield空け　--}}
-                @yeild('content')
+                @yield('content')
             </main>
         </div>
     </body>
