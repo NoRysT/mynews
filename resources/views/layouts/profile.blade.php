@@ -31,16 +31,16 @@
     <body>
         <div id="app">
             {{-- 画面上部に表示するナビゲーションバーです。 --}}
-            <nav class="navbar navbar-expan-md navbar-dark navbar-laravel">
+            <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
                 <div calss="container">
                     <a calss="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedConten" aria-controls="navbarSupportedConten" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     
-                    <div class="cllapse navbar-cllapse" id="navbarSupportedConten">
+                    <div class="collapse navbar-collapse" id="navbarSupportedConten">
                         <!-- Left side of Navbar -->
                         <ul calss="navbar-nav mr-auto">
                             
