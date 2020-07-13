@@ -13,4 +13,12 @@ protected $guarded = array('id');
         'title' => 'required',
         'body' => 'required',
     );
+    
+    // 以下を追記
+    //Newsモデルに関連付け
+    public function histories()
+    {
+        return $this->hasMany('App\History');
+        
+    }
 }

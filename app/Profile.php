@@ -15,4 +15,10 @@ protected $guarded = array('id');
         'hobby' => 'required',
         'introduction' => 'required',
     );
+    
+    //Profileモデル関連付け
+    public function histories()
+    {
+        return $this->hasMany('App\History');
+    }
 }

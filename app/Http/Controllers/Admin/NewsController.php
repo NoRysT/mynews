@@ -8,6 +8,11 @@ use App\Http\Controllers\Controller;
 //以下を追記でNews Modelが扱える　見落としてた
 use App\News;
 
+//以下追記１７
+use App\History;
+
+use Carbon\Carbon;
+
 class NewsController extends Controller
 {
     // 以下を追記
@@ -94,7 +99,12 @@ class NewsController extends Controller
         //該当するデータを上書保存
         $news->fill($news_form)->save();
         
-        return redirect('admin/news');
+        $history = new History;
+        $history->news_id = $news->id;
+        $history->edited_at = Carbon::now();
+        $history->save();
+        
+        return redirect('admin/news/');
     }
     
     //以下を追記
