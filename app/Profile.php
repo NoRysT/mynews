@@ -19,6 +19,6 @@ protected $guarded = array('id');
     //Profileモデル関連付け
     public function histories()
     {
-        return $this->hasMany('App\History');
+        return $this->hasMany('App\ProfileHistory');
     }
 }
